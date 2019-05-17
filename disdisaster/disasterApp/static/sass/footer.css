@@ -1,0 +1,15 @@
+footer{
+	text-align: center
+}
+
+hr{
+	width: 80%;
+}
+
+.footerSection{
+	display: inline-table;
+}
+
+.footerSection h4{
+	font-weight: bold;
+}
