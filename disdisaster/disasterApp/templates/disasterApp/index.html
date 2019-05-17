@@ -1,14 +1,15 @@
-{% load sass_tags %}
+{% extends "./genericFather.html" %}
 
 {% block styles %}
-<link rel="stylesheet" href="{% sass_src 'DisasterApp/assets/scss/cards.scss' %}" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+{% load static %}
+<link rel="stylesheet" href="{% static 'disasterApp/css/cards.css' %}" crossorigin="anonymous">
 {% endblock styles %}
 
 {% block content %}
     <div id="cards" class="container py-5 bg-faded">
-        <div class="card-columns">
+        <div class="card-deck">
         {% for disaster in disasterList %}
-            {% include "disasterCard.html" with disaster=disaster %}    
+            {% include "./disasterCard.html" with disaster=disaster %}   
         {% endfor %}
         </div>            
     </div>            

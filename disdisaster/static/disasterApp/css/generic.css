@@ -1,0 +1,40 @@
+body {
+    background-color: #161616
+}
+
+.navbar-brand {
+    font-size: x-large;
+    color: #689775;
+    -moz-user-select: none; 
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+
+}
+
+.navbar-brand:hover {
+    color: #689775;
+}
+
+#search-button {
+    color: #689775;
+    border-color: #689775
+}
+
+#search-button:hover {
+    background-color: #689775;
+    color: white
+}
+
+.nav-link {
+    color: #ad8174
+}
+
+.nav-link:hover {
+    color: white
+}
+
+.active a {
+    background: #917164;
+    color: black
+}

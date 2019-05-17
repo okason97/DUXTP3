@@ -5,43 +5,43 @@ def index(request):
     disasterList = []
     disasterList.append({
         'name': 'Inundación',
-        'description': 'mucha agua',
-        'image': '../media/inundacion.jpg'
+        'description': 'No te hundas',
+        'image': '/media/disasterApp/inundacion.jpg'
     })
     disasterList.append({
-        'name': 'Tornado y tormenta electrica',
-        'description': 'thundurus',
-        'image': '../media/tornado.webp'
+        'name': 'Tornado',
+        'description': 'No te vueles',
+        'image': '/media/disasterApp/tornado.jpg'
     })
     disasterList.append({
-        'name': 'Aluvión y deslizamiento',
-        'description': 'slide',
-        'image': '../media/aluvion.jpeg'
+        'name': 'Aluvión',
+        'description': 'No te deslices',
+        'image': '/media/disasterApp/aluvion.jpg'
     })
     disasterList.append({
         'name': 'Terremoto',
-        'description': 'graveler',
-        'image': '../media/terremoto.jpg'
+        'description': 'No seas tipo electrico',
+        'image': '/media/disasterApp/terremoto.jpg'
     })
     disasterList.append({
-        'name': 'Erupcion volcanica y ceniza',
-        'description': 'groundoun',
-        'image': '../media/volcan.jpg'
+        'name': 'Erupcion',
+        'description': 'No te tires a la lava',
+        'image': '/media/disasterApp/volcan.jpg'
     })
     disasterList.append({
-        'name': 'Incendio silvestre',
-        'description': 'charizard',
-        'image': '../media/incendio.jpg'
+        'name': 'Incendio',
+        'description': 'No te quemes',
+        'image': '/media/disasterApp/incendio.jpg'
     })
     disasterList.append({
-        'name': 'tormenta de nieve y helada',
-        'description': 'abomasnow',
-        'image': '../media/frio.jpg'
+        'name': 'Tormenta de nieve',
+        'description': 'No te congeles',
+        'image': '/media/disasterApp/frio.jpg'
     })
     disasterList.append({
-        'name': 'epidemias, brotes y pandemias',
-        'description': 'resident evil',
-        'image': '../media/epidemia.jpg'
+        'name': 'Epidemias',
+        'description': 'STARS',
+        'image': '/media/disasterApp/epidemia.jpg'
     })
     return render(request, 'disasterApp/index.html', {
         'disasterList': disasterList,
