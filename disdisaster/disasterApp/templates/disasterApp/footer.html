@@ -1,0 +1,52 @@
+{% load static %}
+{% block styles %}
+<link rel="stylesheet"  type="text/css" href="{% static 'sass/footer.css' %}" >
+{% endblock styles %}
+<hr>
+<footer>
+<section class="col-sm-5 footerSection">
+	<h4>Sitios seguros cercanos</h4>
+	<img src="{% static 'images/map.jpg' %}" alt="Mapa">
+</section>
+<section class="col-sm-5 footerSection">
+	<h4>Teléfonos importantes</h4>
+	<ul class="list-group">
+		<li class="list-group-item d-flex align-items-center">
+			<span class="badge badge-primary badge-pill">911</span>
+			Sistema de emergencias coordinadas
+		</li>
+		<li class="list-group-item d-flex align-items-center">
+			<span class="badge badge-primary badge-pill">100</span>
+			Bomberos
+		</li>
+		<li class="list-group-item d-flex align-items-center">
+			<span class="badge badge-primary badge-pill">101</span>
+			Policía
+		</li>
+		<li class="list-group-item d-flex align-items-center">
+			<span class="badge badge-primary badge-pill">107</span>
+			Emergencia médica
+		</li>
+		<li class="list-group-item d-flex align-items-center">
+			<span class="badge badge-primary badge-pill">131</span>
+			Centro de información de la policía federal argentina
+		</li>
+		<li class="list-group-item d-flex align-items-center">
+			<span class="badge badge-primary badge-pill">103</span>
+			Defensa Civil
+		</li>
+		<li class="list-group-item d-flex align-items-center">
+			<span class="badge badge-primary badge-pill">105</span>
+			Emergencia ambiental
+		</li>
+		<li class="list-group-item d-flex align-items-center">
+			<span class="badge badge-primary badge-pill">130</span>
+			ANSES
+		</li>
+		<li class="list-group-item d-flex align-items-center">
+			<span class="badge badge-primary badge-pill">142</span>
+			Personas menores extraviadas
+		</li>
+	</ul>
+</section>
+</footer>
