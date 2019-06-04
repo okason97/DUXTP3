@@ -47,5 +47,5 @@ def index(request):
         'disasterList': disasterList,
     })
 
-def pedirAyuda(request):
-    return render(request, 'disasterApp/pedirAyuda.html', )
+def ask4Help(request):
+    return render(request, 'disasterApp/ask4Help.html', )

@@ -4,9 +4,23 @@
 {% endblock styles %}
 <hr>
 <footer>
-<section class="col-sm-5 footerSection">
+<section class="col-sm-5 footerSection" >
 	<h4>Sitios seguros cercanos</h4>
-	<img src="{% static 'images/map.jpg' %}" alt="Mapa">
+	<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3" style=" border: 7px solid white; border-radius: 1%">
+		</div>
+		<script>(function () {
+        	var setting = {"height":420,"zoom":17,"queryString":"UNLP - Faculty of Informatics, Avenida 120, La Plata, Buenos Aires Province, Argentina","place_id":"ChIJUfnNj2rmopUR1eW7H_-lkZE","satellite":false,"centerCoord":[51.51801661752168,-0.13488617601141062],"cid":"0x9191a5ff1fbbe5d5","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"40977"};
+        	var d = document;
+        	var s = d.createElement('script');
+        	s.src = 'https://1map.com/js/script-for-user.js?embed_id=40977';
+        	s.async = true;
+        	s.onload = function (e) {
+          	window.OneMap.initMap(setting)
+        	};
+        	var to = d.getElementsByTagName('script')[0];
+        	to.parentNode.insertBefore(s, to);
+      	})();</script>
 </section>
 <section class="col-sm-5 footerSection">
 	<h4>Teléfonos importantes</h4>

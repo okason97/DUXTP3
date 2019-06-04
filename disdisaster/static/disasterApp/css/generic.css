@@ -27,7 +27,7 @@ body {
 }
 
 .nav-link {
-    color: #ad8174
+    color: #689775
 }
 
 .nav-link:hover {
@@ -35,7 +35,7 @@ body {
 }
 
 .active a {
-    background: #917164;
+    background: #689775;
     color: black
 }
 
