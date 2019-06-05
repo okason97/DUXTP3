@@ -1,7 +1,15 @@
+h1{
+	text-align: center;
+	margin-top: 2%;
+}
 
 .helpForm{
 	padding: 5%;
 	font-size: 20px;
+}
+
+.helpForm h2 {
+	text-align: center;
 }
 
 .row {
@@ -13,9 +21,22 @@
 }
 
 .helpForm button{
+ 	margin:0 auto;
+ 	margin-top: 2%;
+}
+
+#helpButton{
   width: 150px;
   height: 50px;
   font-size: 20px;
-  align-self: center;
-  margin:0 auto;
+ 
+}
+
+#exitButton{
+	background-color: #1A612E;
+	border-color: #1A612E;
+}
+
+#exitButton:hover {
+	background-color: #184a26;
 }

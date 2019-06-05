@@ -6,7 +6,9 @@
 {% endblock styles %}
 {% block content %}
 <section class="helpForm">
-	<form >
+	<h1>Pedir ayuda</h1>
+	<h2>Envíe sus datos para que podamos asistirlo</h2>
+	<form id="helpForm">
 	    <div class="form-group row">
 	      <label for="catastrofe">Catástrofe</label>
 	      <select id="catastrofe" required class="custom-select">
@@ -25,14 +27,14 @@
 	      <input type="text" class="form-control" id="ciudad" placeholder="Ingrese ciudad" aria-describedby="inputGroupPrepend" required>
 	    </div>
 	    <div class="form-group row">
-	      <label for="ciudad">Teléfono</label>
+	      <label for="telefono">Teléfono</label>
 	      <small id="helpTelefono" class="form-text text-muted">
 	 		 Ingrese número de teléfono para que podamos contactarnos.
 		  </small>
 	      <input type="number" class="form-control" id="telefono" aria-describedby="inputGroupPrepend" required>
 	    </div>
-		<fieldset class="form-group">
-	      <label for="situacionActual1" class="col-form-label ">Situación actual</label>
+		<fieldset id="situacionActual" form="helpForm" class="form-group">
+	      <legend for="situacionActual" class="col-form-label ">Situación actual</legend>
 			<div class="form-check">
 		  		<input class="form-check-input" type="checkbox" value="" id="situacionActual1">
 		  		<label class="form-check-label" for="situacionActual1">
@@ -59,17 +61,20 @@
 			</div>
 		</fieldset>
 		<div class="form-group col-md-6">
-			    <textarea class="form-control" id="validationTextarea" placeholder="Si desea agregar algún detalle a su situación actual escribalo aquí"></textarea>
-	  		</div>
+			<label for="validationTextarea">Información adicional</label>
+			<textarea class="form-control" id="validationTextarea" placeholder="Si desea agregar algún detalle a su situación actual escribalo aquí"></textarea>
+	  	</div>
 
 		<div class="form-group col-md-6">
 	    	<label for="detallesLocalizacion">Detalles de localización y como llegar</label>
 	    	<small id="helpLocalizacion" class="form-text text-muted">
-	 		  Puede escribir aquí su dirección completa u otros detalles de su localización.
+	 		  Escriba detalladamente en que lugar se encuentra, de esa forma los rescatistas sabrán como localizarlo.
 		  	</small>
 	    	<textarea class="form-control" id="detallesLocalizacion" rows="3"></textarea>
 	  	</div>
-		<button class="btn btn-danger row justify-content-center" type="submit">Pedir ayuda</button>
+		<button id="helpButton" class="btn btn-danger row" type="submit">Pedir ayuda</button>
+	  	<button id="exitButton" class="btn btn-info row">Salir</button>
+
 	</form>
 </section>
 
