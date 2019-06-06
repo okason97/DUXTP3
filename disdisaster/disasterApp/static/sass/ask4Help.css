@@ -50,6 +50,18 @@ h1{
  
 }
 
+@media only screen and (max-width: 900px) {
+	#detallesLocalizacion{
+		height: 50%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#helpButton {
+  		margin-top: 20%;
+  	}
+}
+
 #exitButton{
 	background-color: #1A612E;
 	border-color: #1A612E;

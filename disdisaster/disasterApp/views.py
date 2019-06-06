@@ -49,3 +49,6 @@ def index(request):
 
 def ask4Help(request):
     return render(request, 'disasterApp/ask4Help.html', )
+
+def disasterInfo(request):
+    return render(request, 'disasterApp/disasterInfo.html', )
