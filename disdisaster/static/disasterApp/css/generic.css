@@ -1,33 +1,35 @@
 body {
-    background-color: #161616
+    background-color: whitesmoke;
 }
 
+.navbar{
+    background-color: #161616;
+}
 .navbar-brand {
     font-size: x-large;
-    color: #689775;
+    color: #32BD5A;
     -moz-user-select: none; 
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none; 
-
 }
 
 .navbar-brand:hover {
-    color: #689775;
+    color: #32BD5A;
 }
 
 #search-button {
-    color: #689775;
-    border-color: #689775
+    color: #32BD5A;
+    border-color: #32BD5A
 }
 
 #search-button:hover {
-    background-color: #689775;
+    background-color: #32BD5A;
     color: white
 }
 
 .nav-link {
-    color: #689775
+    color: #32BD5A
 }
 
 .nav-link:hover {
@@ -35,14 +37,14 @@ body {
 }
 
 .active a {
-    background: #689775;
+    background: #32BD5A;
     color: black
 }
 
 hr {
-    border-color: #ad8174
+    border-color: #1A612E
 }
 
 h4 {
-    color: #689775
+    color: #1A612E
 }
