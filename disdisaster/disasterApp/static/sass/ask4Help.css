@@ -68,6 +68,10 @@ h1{
 #exitButton{
 	background-color: #1A612E;
 	border-color: #1A612E;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 2%;
+
 }
 
 #exitButton:hover {

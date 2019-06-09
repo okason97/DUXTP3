@@ -77,11 +77,11 @@
 	    	<small id="helpLocalizacion" class="form-text text-muted">
 	 		  Escriba detalladamente en que lugar se encuentra, de esa forma los rescatistas sabrán como localizarlo.
 		  	</small>
-	    	<textarea class="form-control" id="detallesLocalizacion" rows="3"></textarea>
+	        <textarea required class="form-control" id="detallesLocalizacion" rows="3"></textarea>
 	  	</div>
 	  	</div>
 		<button id="helpButton" class="btn btn-danger row" type="submit">Pedir ayuda</button>
-	  	<button id="exitButton" class="btn btn-info row">Salir</button>
+		<a id="exitButton" href="{% url 'index' %}" class="btn btn-info row col-md-1">Salir</a>
 
 	</form>
 </section>
