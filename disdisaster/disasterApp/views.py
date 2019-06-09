@@ -48,7 +48,12 @@ def index(request):
     })
 
 def ask4Help(request):
-    return render(request, 'disasterApp/ask4Help.html', )
+    if request.POST:
+        return render(request, 'disasterApp/ask4Help.html', {
+            'helpSent': True, 'telephone' : request.POST["telephone"],})
+    else:
+        return render(request, 'disasterApp/ask4Help.html',  {
+            'helpSent': False,} )
 
 def disasterInfo(request):
     return render(request, 'disasterApp/disasterInfo.html', )
