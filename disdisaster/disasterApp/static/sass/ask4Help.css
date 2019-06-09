@@ -3,9 +3,12 @@ h1{
 	margin-top: 2%;
 }
 
-.helpForm{
-	padding: 5%;
+.helpForm {
 	font-size: 20px;
+	padding: 1%;
+	margin: 0 auto;
+	margin-top: 5%;
+	border-top: 1px #1A612E solid;
 }
 
 .helpForm h2 {
