@@ -1,0 +1,83 @@
+h1{
+	text-align: center;
+	margin-top: 2%;
+}
+
+.helpForm {
+	font-size: 20px;
+	padding: 1%;
+	margin: 0 auto;
+	margin-top: 5%;
+	border-top: 1px #1A612E solid;
+}
+
+.helpForm h2 {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.helpForm button{
+ 	margin:0 auto;
+ 	margin-top: 2%;
+}
+
+.row {
+	display: block;
+}
+
+.form-text {
+	margin-top: 0;
+}
+
+.form-row{
+	justify-content: center;
+}
+
+.col-form-label {
+	padding-top: 0;
+}
+
+.form-check-label, #infoAdicionalLabel{
+ 	font-size: 16px;
+}
+
+#detallesLocalizacion{
+	height: 65%;
+}
+
+#helpButton{
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 2%;
+ 
+}
+
+@media only screen and (max-width: 900px) {
+	#detallesLocalizacion{
+		height: 50%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#helpButton {
+  		margin-top: 20%;
+  	}
+}
+
+#exitButton{
+	background-color: #1A612E;
+	border-color: #1A612E;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 2%;
+
+}
+
+#exitButton:hover {
+	background-color: #184a26;
+}
+
+.helpSent{
+	text-align: center;
+}

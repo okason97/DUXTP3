@@ -8,6 +8,8 @@ hr{
 
 .footerSection{
 	display: inline-table;
+	margin-top: 50px;
+	margin-bottom:50px;
 }
 
 .footerSection h4{

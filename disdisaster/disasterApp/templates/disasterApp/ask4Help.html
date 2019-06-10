@@ -1,0 +1,99 @@
+{% extends "disasterApp/genericFather.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet"  type="text/css" href="{% static 'sass/ask4Help.css' %}" >
+{% endblock styles %}
+{% block content %}
+<section class="helpForm col-md-10">
+	{% if not helpSent %}
+	<h1>Pedir ayuda</h1>
+	<h2>Envíe sus datos para que podamos asistirlo</h2>
+	<form id="helpForm" method="POST" action=".">
+		{% csrf_token %}
+		<div class="form-row">
+		    <div class="form-group col-md-5">
+		      <label for="catastrofe">Catástrofe</label>
+		      <small id="helpCatastrofe" class="form-text text-muted">
+		 		 Cual es el problema al que se enfrenta.
+			  </small>
+		      <select id="catastrofe" required class="custom-select">
+		 			<option selected>Selecciona catástrofe</option>
+		 			<option value="1">Incendio</option>
+		 			<option value="2">Inundación</option>
+		 			<option value="3">Temporal</option>
+			  </select>
+		    </div>
+		     <div class="form-group col-md-5">
+		      <label id="telefonoLabel" for="telefono">Teléfono</label>
+		      <small id="helpTelefono" class="form-text text-muted">
+		 		 Ingrese número de teléfono para que podamos contactarnos.
+			  </small>
+		      <input type="number" name="telephone" class="form-control" id="telephone" aria-labelledby="telefonoLabel" required>
+		    </div>
+	    </div>
+	    <div class="form-row ">
+		    <div class="form-group col-md-5">
+		      <label for="provincia">Provincia</label>
+		      <input type="text" class="form-control" id="provincia" placeholder="Ingrese provincia" required>
+		    </div>
+		    <div class="form-group col-md-5">
+		      <label id="ciudadLabel" for="ciudad">Ciudad</label>
+		      <input type="text" class="form-control" id="ciudad" placeholder="Ingrese ciudad" aria-labelledby="ciudadLabel" required>
+		    </div>
+		</div>
+		<div class="form-row">
+			<fieldset id="situacionActual" form="helpForm" class="form-group col-md-5">
+		      <legend for="situacionActual" class="col-form-label ">Situación actual</legend>
+				<div class="form-check">
+			  		<input class="form-check-input" type="checkbox" value="" id="situacionActual1">
+			  		<label class="form-check-label" for="situacionActual1">
+			    		Heridos
+			  		</label>
+				</div>
+				<div class="form-check">
+			  		<input class="form-check-input" type="checkbox" value="" id="situacionActual2">
+			  		<label class="form-check-label" for="situacionActual2">
+			    		Niños
+			  		</label>
+				</div>
+				<div class="form-check">
+			  		<input class="form-check-input" type="checkbox" value="" id="situacionActual3">
+			  		<label class="form-check-label" for="situacionActual3">
+			    		Ancianos
+			  		</label>
+				</div>
+				<div class="form-check">
+			  		<input class="form-check-input" type="checkbox" value="" id="situacionActual4">
+			  		<label class="form-check-label" for="situacionActual4">
+			    		Personas con discapacidad
+			  		</label>
+				</div>
+				<div class="form-group ">
+					<label id="infoAdicionalLabel" for="validationTextarea">Información adicional</label>
+					<textarea class="form-control" id="validationTextarea" placeholder="Si desea agregar algún detalle a su situación actual escribalo aquí"></textarea>
+		  		</div>
+			</fieldset>
+		<div class="form-group col-md-5">
+	    	<label for="detallesLocalizacion">Detalles de localización y como llegar</label>
+	    	<small id="helpLocalizacion" class="form-text text-muted">
+	 		  Escriba detalladamente en que lugar se encuentra, de esa forma los rescatistas sabrán como localizarlo.
+		  	</small>
+	        <textarea required class="form-control" id="detallesLocalizacion" rows="3"></textarea>
+	  	</div>
+	  	</div>
+		<button id="helpButton" class="btn btn-danger row" type="submit">Pedir ayuda</button>
+		<a id="exitButton" href="{% url 'index' %}" class="btn btn-info row col-md-1">Salir</a>
+
+	</form>
+	{% else %}
+		<div class="helpSent">
+			<h2>Pedido de auxilio enviado!</h2>
+		    <p>La ayuda ya está en camino. En breve nos contactaremos al siguiente número: </p>
+			<strong>{{ telephone}}</strong><br>
+			<a href="{% url 'index' %}" id="exitButton" type="button" class="btn btn-primary">Salir</a>
+		</div>
+	{% endif %}
+</section>
+
+{% endblock content %}
