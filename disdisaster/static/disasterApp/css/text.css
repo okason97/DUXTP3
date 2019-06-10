@@ -1,3 +1,26 @@
-.text-content {
-    
+#side-menu h1{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#side-menu{
+    text-align: right;
+    border-left: 1px solid #1A612E;
+    display: table;
+    margin-right: auto
+}
+
+.side-menu-link{
+    display: block;
+    padding: .5rem 1rem;
+}
+
+#text-content{
+    padding-right: 2rem;
+    padding-left: 3rem;
+}
+
+#text-content p{
+    font-size: large;
 }

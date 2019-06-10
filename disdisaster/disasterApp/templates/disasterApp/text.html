@@ -3,31 +3,33 @@
 {% block styles %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'disasterApp/css/text.css' %}" crossorigin="anonymous">
-<link rel="stylesheet" href="{% static 'disasterApp/css/bootstrap-social.scss' %}" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'disasterApp/css/bootstrap-social.css' %}" crossorigin="anonymous">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 {% endblock styles %}
 
 {% block content %}
-    <div id="content" class="py-5 bg-faded row">
-        <div id="text-content" class="col-8">
+    <div id="content" class="bg-faded row">
+        <div id="text-content" class="col-10">
             {{ text_content |safe }}
             <div id="social-buttons">
-                <a class="btn btn-social-icon btn-facebook">
+                <a class="btn btn-lg btn-social-icon btn-facebook" href="#">
                     <span class="fa fa-facebook"></span>
                 </a>
-                <a class="btn btn-social-icon btn-twitter">
+                <a class="btn btn-lg btn-social-icon btn-twitter" href="#">
                     <span class="fa fa-twitter"></span>
                 </a>
-                <a class="btn btn-social-icon btn-instagram">
+                <a class="btn btn-lg btn-social-icon btn-instagram" href="#">
                     <span class="fa fa-instagram"></span>
                 </a>
             </div>        
         </div>        
-        <nav class="nav flex-column col-4 float-right">
-            <a class="nav-link active" href="#">Active</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#">Disabled</a>
-        </nav>
+        <div class="col-2">
+            <nav id="side-menu" class="nav flex-column">
+                <h1 id="side-menu-title">Relacionados</h1>
+                <a class="side-menu-link active" href="#">Active</a>
+                <a class="side-menu-link" href="#">Link</a>
+                <a class="side-menu-link" href="#">Link</a>
+            </nav>
+        </div>        
     </div>            
 {% endblock content %}

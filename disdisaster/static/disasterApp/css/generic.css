@@ -3,19 +3,27 @@ body {
 }
 
 .breadcrumb {
-    background-color: #161616
+    background-color: whitesmoke;
 }
 
 .breadcrumb-item.active {
-    color: #689775
+    color: #161616
 }
 
 .breadcrumb-item + .breadcrumb-item::before{
+    color: #161616
+}
+
+.btn, .btn:link, .btn:visited, .btn:hover, .btn:active {
+    color: white;
+}
+
+a, a:link, a:visited {
     color: #689775
 }
 
-a, a:link, a:visited, a:hover, a:active {
-    color: white
+a:hover, a:active {
+    color: #32BD5A;
 }
 
 a:active, a:focus, a:visited {
