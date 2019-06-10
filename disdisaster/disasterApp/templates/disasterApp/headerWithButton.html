@@ -28,9 +28,13 @@
   </nav>
   <nav id="breadcrumb" aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Library</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Data</li>
+      {% for breadcrumb_item in breadcrumb_list %}
+        {% if forloop.last %}
+          <li class="breadcrumb-item active" aria-current="page">{{ breadcrumb_item.name }}</li>
+        {% else %}
+          <li class="breadcrumb-item"><a href="{% url breadcrumb_item.link %}">{{ breadcrumb_item.name }}</a></li>
+        {% endif %}
+      {% endfor %}
     </ol>
   </nav>
 </div>
