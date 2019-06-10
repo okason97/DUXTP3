@@ -25,8 +25,10 @@
         {% include "./headerWithButton.html" %}
     {% endblock header %}
 
+    <div id="content" tabindex="-1">
     {% block content %}
     {% endblock content %}
+    </div>
 
     {% block footer %}
         {% include "./footer.html" %}
