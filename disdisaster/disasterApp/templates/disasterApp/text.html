@@ -10,7 +10,8 @@
 {% block content %}
     <div class="bg-faded row">
         <div id="text-content" class="col-10">
-            {{ text_content |safe }}
+            {% block disasterInfo %}
+            {% endblock disasterInfo %}
             <div id="social-buttons">
                 <a class="btn btn-lg btn-social-icon btn-facebook" href="#">
                     <span class="fa fa-facebook"></span>

@@ -1,6 +1,6 @@
 {% load static %}
 <div class="card mb-4">
-  <a href="{% url 'text' %}">
+  <a href="info/{{disaster.name}}">
     <img src="{{ disaster.image }}" class="card-img img-fluid" alt="image_{{ disaster.name }}">
     <div class="card-img-overlay">
       <div>
