@@ -53,3 +53,11 @@
     outline: 4px solid;
     outline-color: #689775;
 }
+
+.card h2{
+    font-size: 1.25rem;
+}
+
+.disaster-card-header{
+    display: block
+}

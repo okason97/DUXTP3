@@ -1,8 +1,8 @@
 <div>  
   <a href="#content" class="sr-only sr-only-focusable">Saltar a contenido principal.</a>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg" aria-label="navigation">
     <a class="navbar-brand" href="{% url 'index' %}">DisDisaster</a>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0" aria-label="search">
       <label for="searchInput" style="display: none">Buscar</label>
       <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -24,7 +24,7 @@
         </li>
       </ul>
     </div>
-    <a href="{% url 'ask4Help' %}" type="button" class="btn btn-danger btn-lg">Pedir ayuda</a>
+    <a href="{% url 'ask4Help' %}" class="btn btn-danger btn-lg">Pedir ayuda</a>
   </nav>
   <nav id="breadcrumb" aria-label="breadcrumb">
     <ol class="breadcrumb">
