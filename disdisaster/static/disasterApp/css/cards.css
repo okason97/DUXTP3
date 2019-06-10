@@ -48,3 +48,8 @@
     -webkit-transition: .01s ease-in-out;
     transition: .01s ease-in-out;
 }
+
+.card a:active, .card a:focus, .card a:visited{
+    outline: 4px solid;
+    outline-color: #689775;
+}

@@ -1,10 +1,12 @@
 {% load static %}
 <div class="card mb-4">
-  <img src="{{ disaster.image }}" class="card-img img-fluid" alt="image_{{ disaster.name }}">
-  <div class="card-img-overlay">
-    <div>
-    <h5 class="card-title">{{ disaster.name }}</h5>
+  <a href="/text/">
+    <img src="{{ disaster.image }}" class="card-img img-fluid" alt="image_{{ disaster.name }}">
+    <div class="card-img-overlay">
+      <div>
+      <h5 class="card-title">{{ disaster.name }}</h5>
+      </div>
+      <p class="card-text">{{ disaster.description }}</p>
     </div>
-    <p class="card-text">{{ disaster.description }}</p>
-  </div>
+  </a>
 </div>

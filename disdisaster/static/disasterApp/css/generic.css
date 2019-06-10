@@ -1,5 +1,27 @@
 body {
+    background-color: #161616;
+    color: white
+}
+
+.breadcrumb {
     background-color: #161616
+}
+
+.breadcrumb-item.active {
+    color: #689775
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    color: #689775
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: white
+}
+
+a:active, a:focus, a:visited {
+    outline: 1px solid;
+    outline-color: #689775;
 }
 
 .navbar-brand {
