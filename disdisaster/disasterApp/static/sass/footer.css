@@ -15,3 +15,7 @@ hr{
 .footerSection h4{
 	font-weight: bold;
 }
+
+.footerSection .badge {
+	background-color: #1A612E;
+}

@@ -18,8 +18,9 @@ body {
     color: white;
 }
 
-a, a:link, a:visited {
-    color: #689775
+
+.breadcrumb-item a,.breadcrumb-item a:link,.breadcrumb-item a:visited {
+    color: #1A612E
 }
 
 a:hover, a:active {
@@ -36,7 +37,7 @@ a:active, a:focus, a:visited {
 }
 .navbar-brand {
     font-size: x-large;
-    color: #32BD5A;
+    color: #32BD5A;;
     -moz-user-select: none; 
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -44,7 +45,7 @@ a:active, a:focus, a:visited {
 }
 
 .navbar-brand:hover {
-    color: #32BD5A;
+    color: #3BE76D;
 }
 
 #search-button {
