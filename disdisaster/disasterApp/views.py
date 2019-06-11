@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+import re
 
 def getDisasterList():
     disasterList = []
@@ -58,6 +58,19 @@ def findByName(list,name):
             return element
     return None
 
+
+def mobile(request):
+    MOBILE_AGENT_RE=re.compile(r".*(iphone|mobile|androidtouch)",re.IGNORECASE)
+
+    if MOBILE_AGENT_RE.match(request.META['HTTP_USER_AGENT']):
+        return True
+    else:
+        return False
+
+def to_small(disaster):
+    disaster['image'] = disaster['image'].split('.',1)[0] + '_small.jpg'
+    return disaster
+
 # Create your views here.
 def index(request):
     breadcrumb_list = [{
@@ -65,6 +78,9 @@ def index(request):
         'link':'index'
     }]
     disasterList = getDisasterList()
+
+    if mobile(request):
+        disasterList = map(to_small, disasterList)
 
     return render(request, 'disasterApp/index.html', {
         'disasterList': disasterList,

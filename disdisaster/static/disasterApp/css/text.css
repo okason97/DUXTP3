@@ -4,11 +4,30 @@
     font-weight: 400;
 }
 
-#side-menu{
-    text-align: right;
-    border-left: 1px solid #1A612E;
-    display: table;
-    margin-right: auto
+@media only screen and (min-width: 576px) {
+    #side-menu {
+        text-align: left;
+        border-left: 1px solid #1A612E;
+        margin-right: auto
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #side-menu{
+        text-align: left;
+        border-top: 1px solid #1A612E;
+        margin-right: auto;
+    }
+
+    #side-menu h2, #side-menu a{
+        padding-left: 0px
+    }
+
+    .side-menu-container{
+        padding-left: 3rem;
+        padding-right: 2rem;
+        padding-top: 3rem;
+    }
 }
 
 .side-menu-link{
@@ -23,4 +42,8 @@
 
 #text-content p{
     font-size: large;
+}
+
+#main-content {
+    max-width: 100%;
 }

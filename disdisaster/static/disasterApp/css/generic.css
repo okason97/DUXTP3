@@ -19,12 +19,12 @@ body {
 }
 
 
-.breadcrumb-item a,.breadcrumb-item a:link,.breadcrumb-item a:visited {
+a, a:link, a:visited {
     color: #1A612E
 }
 
 a:hover, a:active {
-    color: #32BD5A;
+    color: #32BD5A
 }
 
 a:active, a:focus, a:visited {
@@ -35,7 +35,24 @@ a:active, a:focus, a:visited {
 .navbar{
     background-color: #161616;
 }
-.navbar-brand {
+
+.nav-item.active a, .nav-item.active a:link, .nav-item.active a:visited {
+    color: black
+}
+
+.nav-item.active a:hover, .nav-item.active a:active {
+    color: white
+}
+
+.nav-item a, .nav-item a:link, .nav-item a:visited {
+    color: #32BD5A
+}
+
+.nav-item a:hover, .nav-item a:active {
+    color: white
+}
+
+.navbar-brand:link, .navbar-brand:visited {
     font-size: x-large;
     color: #32BD5A;;
     -moz-user-select: none; 
@@ -58,17 +75,8 @@ a:active, a:focus, a:visited {
     color: white
 }
 
-.nav-link {
-    color: #32BD5A
-}
-
-.nav-link:hover {
-    color: white
-}
-
 .active a {
     background: #32BD5A;
-    color: black
 }
 
 hr {

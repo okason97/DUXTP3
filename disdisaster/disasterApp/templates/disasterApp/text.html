@@ -8,8 +8,8 @@
 {% endblock styles %}
 
 {% block content %}
-    <div class="bg-faded row">
-        <div id="text-content" class="col-10">
+    <div id="main-content" class="row">
+        <div id="text-content" class="col-sm-12 col-lg-10 col-md-10">
             {% block disasterInfo %}
             {% endblock disasterInfo %}
             <div id="social-buttons">
@@ -24,7 +24,7 @@
                 </a>
             </div>        
         </div>        
-        <div class="col-2">
+        <div class="col-sm-12 col-lg-2 col-md-2 side-menu-container">
             <nav id="side-menu" class="nav flex-column">
                 <h2 id="side-menu-title">Relacionados</h2>
                 <a class="side-menu-link" href="#">Link</a>
