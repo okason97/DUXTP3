@@ -8,8 +8,8 @@
 {% endblock styles %}
 
 {% block content %}
-    <div id="main-content" class="row">
-        <div id="text-content" class="col-sm-12 col-lg-10 col-md-10">
+    <section id="main-content" class="row">
+        <article id="text-content" class="col-sm-12 col-lg-10 col-md-10">
             {% block disasterInfo %}
             {% endblock disasterInfo %}
             <div id="social-buttons">
@@ -23,14 +23,14 @@
                     <span class="fa fa-instagram"></span><p style="display: none">Instagram</p>
                 </a>
             </div>        
-        </div>        
-        <div class="col-sm-12 col-lg-2 col-md-2 side-menu-container">
+        </article>
+        <aside class="col-sm-12 col-lg-2 col-md-2 side-menu-container">
             <nav id="side-menu" class="nav flex-column">
                 <h2 id="side-menu-title">Relacionados</h2>
                 <a class="side-menu-link" href="#">Link</a>
                 <a class="side-menu-link" href="#">Link</a>
                 <a class="side-menu-link" href="#">Link</a>
             </nav>
-        </div>        
-    </div>            
+        </aside>
+    </section>
 {% endblock content %}
