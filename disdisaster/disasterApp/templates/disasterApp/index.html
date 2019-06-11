@@ -6,7 +6,7 @@
 {% endblock styles %}
 
 {% block content %}
-    <div id="cards" class="container py-5 bg-faded">
+    <div id="cards" class="container bg-faded">
         <div class="card-deck">
         {% for disaster in disasterList %}
             {% include "./disasterCard.html" with disaster=disaster %}   

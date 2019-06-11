@@ -36,19 +36,19 @@ a:active, a:focus, a:visited {
     background-color: #161616;
 }
 
-.nav-item.active a, .nav-item.active a:link, .nav-item.active a:visited {
+.navbar-dark .navbar-nav .active .nav-link, .navbar-dark .navbar-nav .active .nav-link:link, .navbar-dark .navbar-nav .active .nav-link:visited {
     color: black
 }
 
-.nav-item.active a:hover, .nav-item.active a:active {
+.navbar-dark .navbar-nav .active .nav-link:hover, .navbar-dark .navbar-nav .active .nav-link:active {
     color: white
 }
 
-.nav-item a, .nav-item a:link, .nav-item a:visited {
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:link,  .navbar-dark .navbar-nav .nav-link:visited{
     color: #32BD5A
 }
 
-.nav-item a:hover, .nav-item a:active {
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active {
     color: white
 }
 
@@ -94,4 +94,14 @@ h4 {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+@media only screen and (max-width: 576px) {
+    #help-button{
+        width: 100%;
+    }
+
+    .phones-list{
+        font-size: small
+    }
 }

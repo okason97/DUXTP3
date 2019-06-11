@@ -112,8 +112,8 @@ def ask4Help(request):
         'name':'Home',
         'link':'index',
         }, {
-        'name':'Ask4Help',
-        'link':'ask4Help',
+        'name':'Pedir ayuda',
+        'link':'Pedir ayuda',
     }]
     if request.POST:
         return render(request, 'disasterApp/ask4Help.html', {
