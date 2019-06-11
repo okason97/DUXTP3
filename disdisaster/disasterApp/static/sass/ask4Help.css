@@ -82,6 +82,19 @@ h1{
 	text-align: center;
 }
 
+.helpSent #helpAgainText{
+	margin-top: 2%;
+	font-size: 23px;
+}
+
+.helpSent #helpAgain{
+	color: #A02733;
+}
+
+.helpSent #helpAgain:hover {
+	color: #7D252E;
+}
+
 .custom-select{
 	color: #161616;
 }

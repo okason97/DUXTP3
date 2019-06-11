@@ -11,6 +11,16 @@
 	<h2>Envíe sus datos para que podamos asistirlo</h2>
 	<form id="helpForm" method="POST" action=".">
 		{% csrf_token %}
+		<div class="form-row ">
+		    <div class="form-group col-md-5">
+		      <label id="nombreLabel" for="nombre">Nombre</label>
+		      <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+		    </div>
+		    <div class="form-group col-md-5">
+		      <label id="apellidoLabel" for="apellido">Apellido</label>
+		      <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
+		    </div>
+		</div>
 		<div class="form-row">
 		    <div class="form-group col-md-5">
 		      <label id="catastrofeLabel" for="catastrofe">Catástrofe</label>
@@ -92,6 +102,7 @@
 		    <p>La ayuda ya está en camino. En breve nos contactaremos al siguiente número: </p>
 			<strong>{{ telephone}}</strong><br>
 			<a title="Ir a la pantalla de inicio" href="{% url 'index' %}" id="exitButton" type="button" class="btn btn-primary">Salir</a>
+			<p id="helpAgainText"> Si ingresaste mal tus datos puedes <a href="{%url 'ask4Help' %}" id="helpAgain" >pedir ayuda nuevamente</a></p>
 		</div>
 	{% endif %}
 </section>
